@@ -1,0 +1,66 @@
+//////////////////////////////////
+// VARIABLES
+
+// COLORS
+$color-gray-light: #F2F2F2;
+$color-gray: #D8D8D8;
+
+$color-blue: #2B3648;
+$color-blue-light: #596F94;
+$color-blue-light-2: #6B7C93;
+$color-blue-dark: #1F2633;
+$color-blue-medium: #393A68;
+
+$color-yellow: #FFC000;
+$color-yellow-light: #FFC619;
+$color-yellow-dark: #E6AC00;
+
+$color-facebook: #3C5A99;
+$color-twitter: #1DA1F2;
+$color-instagram: #E1306C;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT 
+$font-size-small: 1.2rem;
+$font-size-medium: 1.4rem;
+$font-size-default: 1.6rem;
+
+// MEDIA QUERIES
+$bp-xxl: 112.5em;   // 1800px
+$bp-xl: 75em;       // 1200px   em
+$bp-l: 68.75em;     // 1100px
+$bp-m: 56.25em;     // 900px
+$bp-s: 37.5em;      // 600px
+$bp-xs: 31.25em;    // 500px
+
+//////////////////////////////////
+// RESET AND DEFAULT SETTINGS
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; //?
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;          // 1rem = 10px, default size 16px
+
+    @media only screen and (max-width: $bp-l) {
+        font-size: 50%;        // 1rem = 8px
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: $color-gray-light;
+    //color
+}

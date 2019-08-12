@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <a href="/app/"><img src="images/logo.png" alt="logo" class="navbar__logo"></a>
+
+                <input type="checkbox" class="navbar__checkbox" id="nav-toggle">
+
+                <label for="nav-toggle" class="navbar__toggle">
+                    <span class="navbar__icon"></span>
+                </label>
+                <div id="nav-wrapper"></div>
+            </nav>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <nav class="side-nav">
+                    <ul class="side-nav__list">
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=mathematics" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-math"></use>
+                                </svg>
+                                <span>Mathematics</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=languages" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-language"></use>
+                                </svg>
+                                <span>Languages</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=computer%20science" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-code"></use>
+                                </svg>
+                                <span>Computer Science</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=science" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-science"></use>
+                                </svg>
+                                <span>Science</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=arts" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-paintbrush"></use>
+                                </svg>
+                                <span>Arts</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=health" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-medical"></use>
+                                </svg>
+                                <span>Health</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social social--side">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon social__icon--facebook">
+                            <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon social__icon--twitter">
+                            <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon social__icon--instagram">
+                            <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </aside>
+            <main class="main-content">
+                <div id="form-wrapper">
+                    <form action="#" class="form">
+                        <h2 class="form__heading heading-secondary">Sign Up</h2>
+    
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Login" id="login" required>
+                        </div>
+    
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                        </div>
+    
+                        <div class="form__group">
+                            <input type="password" class="form__input" placeholder="Password" id="password" required>
+                        </div>
+    
+                        <div class="form__group form__group--button">
+                            <button id="signUp" class="button-primary">Sign Up</button>
+                        </div>
+    
+                        <div id="message" class="form__message"></div>
+                    </form>
+                </div>            
+            </main>
+        </div>
+    </div>
+    <script src="js/Nav.js"></script>
+    <script src="js/SignUp.js"></script> 
+</body>
+</html>

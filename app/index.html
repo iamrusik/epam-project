@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DELOREAN</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <a href="/app/"><img src="images/logo.png" alt="logo" class="navbar__logo"></a>
+
+                <input type="checkbox" class="navbar__checkbox" id="nav-toggle">
+
+                <label for="nav-toggle" class="navbar__toggle">
+                    <span class="navbar__icon"></span>
+                </label>
+                <div id="nav-wrapper"></div> 
+            </nav>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <nav class="side-nav">
+                    <ul class="side-nav__list">
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=mathematics" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-math"></use>
+                                </svg>
+                                <span>Mathematics</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=languages" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-language"></use>
+                                </svg>
+                                <span>Languages</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=computer%20science" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-code"></use>
+                                </svg>
+                                <span>Computer Science</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=science" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-science"></use>
+                                </svg>
+                                <span>Science</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=arts" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-paintbrush"></use>
+                                </svg>
+                                <span>Arts</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="/app/tests.html?category=health" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="images/sprite.svg#icon-medical"></use>
+                                </svg>
+                                <span>Health</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social social--side">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon social__icon--facebook">
+                            <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon social__icon--twitter">
+                            <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon social__icon--instagram">
+                            <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </aside>
+            <main class="main-content">
+                <div class="carousel">
+                    <h1 class="heading-primary">Free Quizzes for Every Student</h1>
+                    <div class="carousel__overlay"></div>
+                    
+                    <div class="carousel__slide">
+                        <img class="carousel__photo" src="images/slide-1.jpg">  
+                        <div class="carousel__slide-content">
+                            <p class="carousel__paragraph">Choose from millions of quizzes covering <strong>math</strong>, <strong>science</strong>, <strong>languages</strong>, <strong>arts</strong> and more</p>
+                        </div> 
+                    </div>  
+                    <div class="carousel__slide">
+                        <img class="carousel__photo" src="images/slide-2.jpg"> 
+                        <div class="carousel__slide-content">
+                            <p class="carousel__paragraph"><strong>Sign up</strong> as a teacher, student, or parent to get started</p>
+                            <a href="#" class="button-primary">Sign up</a>
+                        </div>  
+                    </div>
+                    <div class="carousel__slide">
+                        <img class="carousel__photo" src="images/slide-3.jpg"> 
+                        <div class="carousel__slide-content">
+                            <p class="carousel__paragraph">Choose your favorite way to follow us and get our latest news</p>
+                            <div class="carousel__social">
+                                <a href="#" class="carousel__social-link">
+                                    <svg class="carousel__social-icon carousel__social-icon--facebook">
+                                        <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                                    </svg>  
+                                </a>
+                                <a href="#" class="carousel__social-link">
+                                    <svg class="carousel__social-icon carousel__social-icon--twitter">
+                                        <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                                    </svg>  
+                                </a>
+                                <a href="#" class="carousel__social-link">
+                                    <svg class="carousel__social-icon carousel__social-icon--instagram">
+                                        <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                                    </svg>  
+                                </a>      
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <a class="carousel__button carousel__button--prev"  onclick="plusSlides(-1)">
+                        <svg class="carousel__button-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-thin-left"></use>
+                        </svg>
+                    </a>
+                    <a class="carousel__button carousel__button--next"  onclick="plusSlides(1)">
+                        <svg class="carousel__button-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
+                        </svg>
+                    </a>
+
+                    <div class="carousel__dots-box">
+                        <span class="carousel__dot" onclick="currentSlide(1)"></span> 
+                        <span class="carousel__dot" onclick="currentSlide(2)"></span> 
+                        <span class="carousel__dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+
+                <div id="featured-sections-wrapper">
+               <!-- <div class="featured-section">
+                        <div class="featured-section__header">
+                            <div class="featured-section__title">
+                                <span>Mathematics</span>
+                            </div>
+                            <a href="#" class="button-more">
+                                <span>See more</span>
+                                <svg class="button-more__icon">
+                                    <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                            </a> 
+                        </div>
+                        <div class="featured-section__list">
+                            <div class="featured-card">
+                                <div class="featured-card__header">
+                                    <div class="featured-card__stats">
+                                        <span>10 Qs</span>
+                                    </div>
+                                </div>
+                                <div class="featured-card__title">
+                                    <span>Math Knowledge</span>
+                                </div>
+                            </div>
+                            <div class="featured-card">
+                                <div class="featured-card__header">
+                                    <div class="featured-card__stats">
+                                        <span>10 Qs</span>
+                                    </div>
+                                </div>
+                                <div class="featured-card__title">
+                                    <span>Math Knowledge</span>
+                                </div>
+                            </div>
+                            <div class="featured-card">
+                                <div class="featured-card__header">
+                                    <div class="featured-card__stats">
+                                        <span>10 Qs</span>
+                                    </div>
+                                </div>
+                                <div class="featured-card__title">
+                                    <span>Math Knowledge</span>
+                                </div>
+                            </div>
+                            <div class="featured-card">
+                                <div class="featured-card__header">
+                                    <div class="featured-card__stats">
+                                        <span>10 Qs</span>
+                                    </div>
+                                </div>
+                                <div class="featured-card__title">
+                                    <span>Math Knowledge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/Nav.js"></script>
+    <script src="js/FeaturedSection.js"></script>
+</body>
+</html>
